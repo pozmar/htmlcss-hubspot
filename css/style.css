@@ -135,3 +135,8 @@
   width: 60%;
   height: 600px;
 }
+.row-footer{
+  height: 700px;
+  width: 100%;
+  background-color: #104578;
+}
