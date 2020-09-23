@@ -1,0 +1,137 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.row::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+.row-top{
+  background-color: beige;
+  height: 100px;
+  width: 100%;
+}
+.row-nav{
+  height: 100px;
+  background-color: lightblue;
+  width: 100%;
+}
+.col{
+  float: left;
+  position: relative;
+}
+.col-logo{
+  width: 30%;
+  border: 2px solid black;
+  height: 100px;
+}
+.col-nav{
+  width: 70%;
+  border: 2px solid black;
+  height: 100px;
+}
+.box-logo{
+  height: 50px;
+  background-color: red;
+  border: 5px solid blue;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.row-immagine{
+  height: 700px;
+  width: 100%;
+  background-color: #edcef0;
+}
+.row-linea{
+  height: 100px;
+  width: 100%;
+  background-color: #4cedda;
+  border: 3px solid black;
+}
+.central{
+  width: 100%;
+  height: 1400px;
+  background-color: lightgrey;
+  position: relative;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.row-pres{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-bottom: 2px dotted black;
+}
+.central .box-3{
+  height: 100px;
+  background-color: red;
+  border: 5px solid blue;
+  width: 100px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.row-free{
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.row-free .box-4{
+  background-color: white;
+  height: 200px;
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 5px;
+
+}
+.row-free .col-learn{
+  background-color: red;
+  border-right: 2px dotted black;
+  height: 100%;
+  width: 30%;
+}
+.row-free .col-feat{
+  background-color: yellow;
+  height:100%;
+  width: 70%;
+}
+.col-mark, .col-sales, .col-service{
+  width: 30%;
+  height: 600px;
+  background-color: pink;
+  border: 2px dotted grey;
+
+}
+.col-sales{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.row-n{
+  background-color: #3dc4b4;
+  width: 100%;
+  height: 700px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.row-bottom{
+  height: 700px;
+  width: 100%;
+  background-color: white;
+}
+.col-custom{
+  width: 40%;
+  height: 600px;
+  border-right: 3px solid black;
+
+}
+.col-sponsor{
+  width: 60%;
+  height: 600px;
+}
