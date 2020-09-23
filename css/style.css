@@ -1,14 +1,21 @@
+/*do caratteristiche comuni per tutta la pagina*/
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-
+/*do le proprietà alla row per il float delle colonne*/
 .row::after{
   clear: both;
   content: "";
   display: table;
 }
+/*do proprietà comuni a tutte le col*/
+.col{
+  float: left;
+  position: relative;
+}
+/*do caratteristiche alla row sopra*/
 .row-top{
   background-color: beige;
   height: 100px;
@@ -17,12 +24,14 @@
   padding-right: 150px;
 
 }
+/*do proprietà alla prima colonna*/
 .col-lang{
   width: 30%;
   border: 2px solid black;
   height: 100px;
 
 }
+/*do proprietà al primo box perchè stia al centro del contenitore*/
 .box-lang{
   height: 50px;
   width: 150px;
@@ -34,11 +43,13 @@
   transform: translate(-50%, -50%);
 
 }
+/*do proprietà alla seconda colonna della row*/
 .col-log{
   width: 70%;
   height: 100px;
 
 }
+/*do proprietà al box perchè stia in mezzo ma spostato verso destra*/
 .box-log{
   height: 50px;
   width: 300px;
@@ -51,6 +62,7 @@
 
 
 }
+/*do proprietà alla row nav*/
 .row-nav{
   height: 100px;
   background-color: lightblue;
@@ -58,20 +70,19 @@
   padding-left: 150px;
   padding-right: 150px;
 }
-.col{
-  float: left;
-  position: relative;
-}
+/*do proprietà alla prima col della row nav*/
 .col-logo{
   width: 30%;
   border: 2px solid black;
   height: 100px;
 }
+/*do proprietà alla seconda col della row nav*/
 .col-nav{
   width: 70%;
   border: 2px solid black;
   height: 100px;
 }
+/*do proprietà aò box perchè stia in mezzo ma verso destra*/
 .box-nav{
   height: 50px;
   width: 400px;
@@ -83,6 +94,7 @@
 
 
 }
+/*do proprietà al box perchè stia alc entro del suo contenitore*/
 .box-logo{
   height: 50px;
   background-color: red;
@@ -93,6 +105,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*do proprietà alla row contenente il testo e l'img di sfondo*/
 .row-immagine{
   height: 700px;
   width: 100%;
@@ -100,23 +113,23 @@
   position: relative;
 
 }
+/*do proprietà alla box sovrapposta all'img*/
 .box-nextimg{
   height: 500px;
   width: 50%;
   border: 3px solid black;
   position: absolute;
   top:50px;
-  left:100px;
-
-
-
+  left:150px;
 }
+/*do proprietà alla row della linea che separa le sezioni*/
 .row-linea{
   height: 100px;
   width: 100%;
   background-color: #4cedda;
   border: 3px solid black;
 }
+/*do proprietà al contenitore della aprte centrale della pagina*/
 .central{
   width: 100%;
   height: 1400px;
@@ -126,12 +139,14 @@
   padding-right: 150px;
 
 }
+/*do proprietà alla prima row del central*/
 .row-pres{
   width: 100%;
   height: 400px;
   position: relative;
   border-bottom: 2px dotted black;
 }
+/*do proprietà al primo box della prima row affinchè stia al centro del contenitore*/
 .central .box-cube{
   height: 100px;
   background-color: red;
@@ -141,8 +156,8 @@
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
+/*do proprietà al secondo box della prima row affinchè stia in centro*/
 .central .box-slog{
   height: 150px;
   width: 80%;
@@ -151,14 +166,14 @@
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-
 }
+/*do proprietà alla seconda row del central*/
 .row-free{
   width: 100%;
   height: 300px;
   position: relative;
 }
+/*do proprietà al box della row che è suddiviso in due colonne*/
 .row-free .box-free{
   background-color: white;
   height: 200px;
@@ -167,6 +182,7 @@
   border-radius: 5px;
 
 }
+/*do proprietà alle due colonne del box*/
 .row-free .col-learn{
   background-color: red;
   border-right: 2px dotted black;
@@ -178,6 +194,7 @@
   height:100%;
   width: 70%;
 }
+/*do proprietà alle tre colonne della terza row*/
 .col-mark, .col-sales, .col-service{
   width: 30%;
   height: 600px;
@@ -185,10 +202,12 @@
   border: 2px dotted grey;
 
 }
+/*do i margini alla colonna centrake*/
 .col-sales{
   margin-left: 40px;
   margin-right: 40px;
 }
+/*do proprietà alla row contenente la descrizione e la table*/
 .row-n{
   background-color: #3dc4b4;
   width: 100%;
@@ -197,6 +216,7 @@
   padding-right: 200px;
   position: relative;
 }
+/*do proprietà alla row con la descrizione*/
 .row-desc{
   height: 200px;
   width: 700px;
@@ -205,9 +225,8 @@
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-
 }
+/*do proprietà alla row con la table*/
 .row-table{
   height: 350px;
   width: 900px;
@@ -218,6 +237,7 @@
   transform: translate(-50%, -50%);
 
 }
+/*do proprietà alla row in basso che è suddivisa in 2 colonne*/
 .row-bottom{
   height: 700px;
   width: 100%;
@@ -233,6 +253,7 @@
   width: 60%;
   height: 600px;
 }
+/*do proprietà alla row del footer*/
 .row-footer{
   height: 700px;
   width: 100%;
