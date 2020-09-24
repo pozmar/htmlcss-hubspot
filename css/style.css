@@ -42,6 +42,12 @@
   top: 50%;
   transform: translate(0%, -50%);
 }
+.fa-globe{
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
 /*inserisco proprietà alla dropdown per affiancare il button*/
 .drop-login{
   float: left;
@@ -55,9 +61,14 @@
 }
 .lang{
   border: none;
+  float: right;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  background-color: #e0f3ff;
 }
 /*metto in mezzo ma spostati a sinistra gli elementi rispetto al contenitore*/
-.drop-login, .lang{
+.drop-login{
   float: left;
   position: relative;
   top: 50%;
@@ -86,11 +97,13 @@
   transform: translate(0%, -50%);
   padding: 5px;
 }
+/*do proprietà al bottone rosso che condivide le caratteristiche con quello nella aprte centrale della pagina*/
 .redbtn{
   border: solid #ff7a59;
   background-color: #ff7a59;
   color: white;
 }
+/*do proprietà agli altri bottoni*/
 #borderbtn{
   background-color: #e0f3ff;
   color: #ff7a59;
@@ -200,11 +213,12 @@ font-family: sans-serif;
   background-color: #4cedda;
   border: 3px solid black;
 }
+
 /*do proprietà al contenitore della aprte centrale della pagina*/
 .central{
   width: 100%;
   height: 1400px;
-  background-color: lightgrey;
+  background-color: #fcebf7;
   position: relative;
   padding-left: 150px;
   padding-right: 150px;
@@ -220,63 +234,109 @@ font-family: sans-serif;
 /*do proprietà al primo box della prima row affinchè stia al centro del contenitore*/
 .central .box-cube{
   height: 100px;
-  background-color: red;
-  border: 5px solid blue;
   width: 100px;
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*do proprietà all'immagine del cubo*/
+.box-cube img{
+  width: 100%;
+  height: 100%;
+}
 /*do proprietà al secondo box della prima row affinchè stia in centro*/
 .central .box-slog{
   height: 150px;
-  width: 80%;
-  border: 2px solid black;
+  width: 100%;
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.box-slog > h1{
+  font-size: 30px;
+}
+.box-slog > h1, .box-slog> p{
+  font-family: sans-serif;
+  text-align: center;
 }
 /*do proprietà alla seconda row del central*/
 .row-free{
   width: 100%;
   height: 300px;
   position: relative;
+  background-color: white;
 }
 /*do proprietà al box della row che è suddiviso in due colonne*/
 .row-free .box-free{
-  background-color: white;
-  height: 200px;
+  height: 100%;
   width: 100%;
-  border: 5px solid black;
   border-radius: 5px;
-
 }
 /*do proprietà alle due colonne del box*/
 .row-free .col-learn{
-  background-color: red;
-  border-right: 2px dotted black;
   height: 100%;
   width: 30%;
 }
+/*do proprietà alla box dell'img*/
+
 .row-free .col-feat{
-  background-color: yellow;
   height:100%;
   width: 70%;
 }
+/*do proprietà all'immagine libro*/
+.col-learn img{
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+/*do proprietà al bottone sotto l'img*/
+.box-free .redbtn{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  padding: 20px;
+}
+/*do proprietà agòi h3 e alle p*/
+.col-feat h3, .col-feat p{
+margin-left: 20px;
+margin-top: 10px;
+margin-right: 10px;
+text-align: left;
+line-height: 35px;
+}
+/*do proprietà inline alla p*/
+.col-feat p{
+  display: inline;
+}
+.row-exp{
+  width: 100%;
+  height: 600px;
+  position: relative;
+
+}
 /*do proprietà alle tre colonne della terza row*/
+
 .col-mark, .col-sales, .col-service{
   width: 30%;
-  height: 600px;
+  height: 500px;
   background-color: pink;
   border: 2px dotted grey;
+  margin-top: 80px;
 
 }
 /*do i margini alla colonna centrake*/
 .col-sales{
   margin-left: 40px;
-  margin-right: 40px;
+  margin-right: auto;
+}
+.col-service{
+  float: right;
 }
 /*do proprietà alla row contenente la descrizione e la table*/
 .row-n{
