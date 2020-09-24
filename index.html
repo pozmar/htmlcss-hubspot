@@ -3,163 +3,201 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
-  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Hubspot</title>
 </head>
 <body>
   <!--Creo container per l'intera pagina-->
   <div class="container">
     <!--Creo la row per la riga in alto-->
-    <div class="row row-top">
-      <!--creo due colonne separate-->
-      <div class="col col-lang">
-
-        <!--creo box per selezione lingua-->
-        <div class="box box-lang">
+    <header>
+      <div class="row row-top">
+        <!--creo due colonne separate-->
+        <div class="col col-lang">
 
 
-        </div>
-      </div>
-      <!--creo colonna con dentro box del login-->
-      <div class="col col-log">
-        <div class="box box-log">
+          <!--creo box per selezione lingua-->
+          <div class="box box-lang">
+            <!--inserisco la dropdown per la lingua-->
 
-        </div>
+            <div class="dropdown drop-login">
 
-      </div>
-
-
-
-    </div>
-    <!--creo una row per la nav-->
-    <div class="row row-nav">
-      <!--creo due colonne separate. la prima per il logo con box corrispondente-->
-      <div class="col col-logo">
-        <div class="box box-logo">
-
-        </div>
-
-
-      </div>
-      <!--creo col della nav e box-->
-      <div class="col col-nav">
-        <div class="box box-nav">
-
-        </div>
-
-      </div>
-
-    </div>
-    <!--creo una sezione per l'immagine-->
-    <div class="row row-immagine">
-      <div class="box box-nextimg">
-
-      </div>
-
-    </div>
-    <!--creo una sezione per la linea colorata dopo l'img-->
-    <div class="row row-linea">
-
-    </div>
-    <!--creo una container per la parte centrale e la divido in 3 row-->
-    <div class="central">
-      <div class="row row-pres">
-        <!--creo una box per l'immagine del cubo-->
-        <div class="box box-cube">
-
-
-        </div>
-        <!--creo un box per la scritta sotto-->
-        <div class="box box-slog">
-
-        </div>
-
-      </div>
-      <!--creo una row per il box in centro suddiviso in due colonne-->
-      <div class="row row-free">
-        <div class="box box-free">
-          <div class="col col-learn">
-
+              <select>
+                <i class="fas fa-globe-europe"></i>
+                <option>English</option>
+              </select>
+            </div>
+            <!--inserisco contatti-->
+            <button class="lang" type="button">Contact Us</button>
           </div>
-          <div class="col col-feat">
+
+        </div>
+        <!--creo colonna con dentro box del login-->
+        <div class="col col-login">
+          <div class="box box-login">
+            <button type="button ">GetHubspotFree</button>
+            <button type="button">Log In</button>
+            <button type="submit"><i class="fa fa-search"></i></button>
+
+
+
 
           </div>
 
         </div>
 
-      </div>
-      <!--creo la terza row del central dove inserisco le tre colonne-->
-      <div class="row row-exp">
-        <div class="col col-mark">
 
-        </div>
-        <div class="col col-sales">
-
-        </div>
-        <div class="col col-service">
-
-        </div>
 
       </div>
-
-    </div>
-    <!--creo la row per la sezione con descrizione e tabella suddivise a loro volta in deu row separate-->
-    <div class="row row-n">
-      <div class="row row-desc">
-        <h2></h2>
-        <p></p>
-      </div>
-      <div class="row row-table">
-        <table>
-          <tr>
-            <td></td>
-          </tr>
-        </table>
-      </div>
-
-
-    </div>
-    <!--creo la row per la parte sotto della pagina suddivisa in due colonne e con i box all'interno-->
-    <div class="row row-bottom">
-      <div class="col col-custom">
-        <div class="box box-custom">
-          </div>
-          <div class="box box-start">
-
+      <!--creo una row per la nav-->
+      <div class="row row-nav">
+        <!--creo due colonne separate. la prima per il logo con box corrispondente-->
+        <div class="col col-logo">
+          <div class="box box-logo">
+            <img src="img/hubspot-logo.svg" alt="logo hubspot">
           </div>
 
 
-
-      </div>
-      <!--creo la col che conterrà gli sponsor e l'img-->
-      <div class="col col-sponsor">
-
-      </div>
-
-    </div>
-    <!--creo una sezione per il footer che sarà suddiviso a sua volta in due row-->
-    <div class="row row-footer">
-      <!--suddivido la prima row in 4 colonne-->
-      <div class="row row-info">
-        <div class="col col-tra">
-
         </div>
-        <div class="col col-con">
-
-        </div>
-        <div class="col col-manage">
-
-        </div>
-        <div class="col col-sup">
-
-        </div>
-
-      </div>
-      <div class="row row-end">
+        <!--creo col della nav e box-->
+        <div class="col col-nav">
+          <div class="box box-nav">
+            <!--creo una nav con dentro tutti i bottoni tranne uno con la dropdown-->
+            <nav>
+              <div class="dropdown drop-nav">
+                <select>
+                  <option>Software</option>
+                </select>
+                <button type="button" name="button">Pricing</button>
+                <select>
+                  <option>Resources</option>
+                </select>
+                <select>
+                <option>Partners</option>
+              </select>
+              <select>
+              <option>About</option>
+            </select>
+          </div>
+        </nav>
 
       </div>
 
     </div>
+
   </div>
+</header>
+<!--creo una sezione per l'immagine-->
+<div class="row row-immagine">
+  <div class="box box-nextimg">
+
+  </div>
+
+</div>
+<!--creo una sezione per la linea colorata dopo l'img-->
+<div class="row row-linea">
+
+</div>
+<!--creo una container per la parte centrale e la divido in 3 row-->
+<div class="central">
+  <div class="row row-pres">
+    <!--creo una box per l'immagine del cubo-->
+    <div class="box box-cube">
+
+
+    </div>
+    <!--creo un box per la scritta sotto-->
+    <div class="box box-slog">
+
+    </div>
+
+  </div>
+  <!--creo una row per il box in centro suddiviso in due colonne-->
+  <div class="row row-free">
+    <div class="box box-free">
+      <div class="col col-learn">
+
+      </div>
+      <div class="col col-feat">
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--creo la terza row del central dove inserisco le tre colonne-->
+  <div class="row row-exp">
+    <div class="col col-mark">
+
+    </div>
+    <div class="col col-sales">
+
+    </div>
+    <div class="col col-service">
+
+    </div>
+
+  </div>
+
+</div>
+<!--creo la row per la sezione con descrizione e tabella suddivise a loro volta in deu row separate-->
+<div class="row row-n">
+  <div class="row row-desc">
+    <h2></h2>
+    <p></p>
+  </div>
+  <div class="row row-table">
+    <table>
+      <tr>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+
+</div>
+<!--creo la row per la parte sotto della pagina suddivisa in due colonne e con i box all'interno-->
+<div class="row row-bottom">
+  <div class="col col-custom">
+    <div class="box box-custom">
+    </div>
+    <div class="box box-start">
+
+    </div>
+
+
+
+  </div>
+  <!--creo la col che conterrà gli sponsor e l'img-->
+  <div class="col col-sponsor">
+
+  </div>
+
+</div>
+<!--creo una sezione per il footer che sarà suddiviso a sua volta in due row-->
+<div class="row row-footer">
+  <!--suddivido la prima row in 4 colonne-->
+  <div class="row row-info">
+    <div class="col col-tra">
+
+    </div>
+    <div class="col col-con">
+
+    </div>
+    <div class="col col-manage">
+
+    </div>
+    <div class="col col-sup">
+
+    </div>
+
+  </div>
+  <div class="row row-end">
+
+  </div>
+
+</div>
+</div>
 
 </body>
 </html>
