@@ -84,6 +84,25 @@
   position: relative;
   top: 50%;
   transform: translate(0%, -50%);
+  padding: 5px;
+}
+#redbtn{
+  border: solid #ff7a59;
+  background-color: #ff7a59;
+  color: white;
+}
+#borderbtn{
+  background-color: #e0f3ff;
+  color: #ff7a59;
+  border-color: #ff7a59;
+  border-style: solid;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#search{
+  border: none;
+  color: blue;
+  background-color:#e0f3ff;
 }
 /*do proprietà alla row nav*/
 .row-nav{
@@ -140,6 +159,11 @@
 }
 .drop-nav > select{
   border:none;
+}
+/*do proprietà solo al button della nav senza dropdown*/
+#pricebtn{
+  border: none;
+  background-color: white;
 }
 /*do proprietà alla row contenente il testo e l'img di sfondo*/
 .row-immagine{
