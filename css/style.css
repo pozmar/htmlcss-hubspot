@@ -86,7 +86,7 @@
   transform: translate(0%, -50%);
   padding: 5px;
 }
-#redbtn{
+.redbtn{
   border: solid #ff7a59;
   background-color: #ff7a59;
   color: white;
@@ -99,7 +99,7 @@
   margin-left: 10px;
   margin-right: 10px;
 }
-#search{
+.#search{
   border: none;
   color: blue;
   background-color:#e0f3ff;
@@ -176,10 +176,22 @@
 .box-nextimg{
   height: 500px;
   width: 50%;
-  border: 3px solid black;
   position: absolute;
   top:50px;
   left:150px;
+}
+/*do proprietà all'elemento h2*/
+.box-nextimg h1{
+  font-size: 60px;
+}
+/*do proprietà all'elemento h2 e p*/
+.box-nextimg > h1, p{
+font-family: sans-serif;
+}
+/*do proprietà al bottone dentro il box*/
+.box-nextimg .redbtn{
+  padding: 20px;
+  border-radius: 5px;
 }
 /*do proprietà alla row della linea che separa le sezioni*/
 .row-linea{
