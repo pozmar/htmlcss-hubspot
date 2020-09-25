@@ -42,7 +42,7 @@
   top: 50%;
   transform: translate(0%, -50%);
 }
-.fa-globe{
+.topglobe{
   float: left;
   position: relative;
   top: 50%;
@@ -391,23 +391,68 @@ padding-left: 10px;
 .row-desc{
   height: 200px;
   width: 700px;
-  border: 2px solid black;
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.row-desc h2{
+  font-size: 30px;
+}
+.row-desc p{
+  font-size: 15px;
 }
 /*do proprietà alla row con la table*/
 .row-table{
   height: 350px;
   width: 900px;
-  border: 2px solid black;
   position: absolute;
   top:70%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.row-table table{
+  width: 100%;
+  height: 350px;
+  text-align: center;
+}
+/*do proprietà all'icona caricata come img*/
+.row-table img{
+  width: 30px;
+  height: 30px;
+}
+#hubs{
+  width: 30px;
+  height: 20px;
+}
+.up td:first-child{
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+.up td:last-child{
+  border-bottom: 1px solid white;
+  border-left: 1px solid white
+}
+.up td:nth-child(2){
+  border-bottom: 1px solid white;
 
 }
+.up td:nth-child(3){
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+.down td:first-child{
+  border-right: 1px solid white;
+}
+.down td:nth-child(3){
+  border-left: 1px solid white;
+}
+.down td:last-child{
+  border-left: 1px solid white;
+}
+
 /*do proprietà alla row in basso che è suddivisa in 2 colonne*/
 .row-bottom{
   height: 700px;
@@ -430,7 +475,7 @@ padding-left: 10px;
   width: 100%;
   background-color: #104578;
   padding-left: 150px;
-  padding-right: 150px;
+    padding-right: 150px;
   padding-top: 30px;
 }
 /*do proprietà comuni alle 4 col*/
