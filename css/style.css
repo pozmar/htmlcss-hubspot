@@ -20,7 +20,7 @@
 /*do caratteristiche alla row sopra*/
 
 .row-top{
-  background-color: #e0f3ff;
+  background-color: #ebf2fc;
   height: 100px;
   width: 100%;
   padding-left: 150px;
@@ -218,7 +218,7 @@ font-family: sans-serif;
 .central{
   width: 100%;
   height: 1400px;
-  background-color: #fcebf7;
+  background-color: #ebf2fc;
   position: relative;
   padding-left: 150px;
   padding-right: 150px;
@@ -229,7 +229,6 @@ font-family: sans-serif;
   width: 100%;
   height: 400px;
   position: relative;
-  border-bottom: 2px dotted black;
 }
 /*do proprietà al primo box della prima row affinchè stia al centro del contenitore*/
 .central .box-cube{
@@ -284,6 +283,7 @@ font-family: sans-serif;
 .row-free .col-feat{
   height:100%;
   width: 70%;
+  margin-top: 30px;
 }
 /*do proprietà all'immagine libro*/
 .col-learn img{
@@ -320,24 +320,64 @@ line-height: 35px;
   position: relative;
 
 }
+/*do proprietà alla box superiore con l'img delle tre col*/
+.centerimg{
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+/*do proprietà alla box inferiore con il bottone delle tre col*/
+.centerbtn{
+width: 100%;
+height: 40%;
+position: absolute;
+top: 85%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+padding-right: 10px;
+padding-left: 10px;
+
+}
+.centerbtn > p{
+  text-align: left;
+}
+/*do proprietà al bottone nelle col*/
+.centerbtn .redbtn{
+  padding: 20px;
+  border-radius: 5px;
+}
+.centerimg img{
+  width: 25%;
+}
+
 /*do proprietà alle tre colonne della terza row*/
 
 .col-mark, .col-sales, .col-service{
   width: 30%;
   height: 500px;
-  background-color: pink;
-  border: 2px dotted grey;
+  background-color: white;
   margin-top: 80px;
+  position: relative;
 
 }
 /*do i margini alla colonna centrake*/
 .col-sales{
-  margin-left: 40px;
+  margin-left: 50px;
   margin-right: auto;
 }
+
 .col-service{
   float: right;
 }
+
 /*do proprietà alla row contenente la descrizione e la table*/
 .row-n{
   background-color: #3dc4b4;
