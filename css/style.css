@@ -4,8 +4,6 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
-
 /*do le proprietà alla row per il float delle colonne*/
 .row::after{
   clear: both;
@@ -17,21 +15,19 @@
   float: left;
   position: relative;
 }
-/*do caratteristiche alla row sopra*/
-
+/*PRIMA SEZIONE*/
+/* do caratteristiche alla row sopra*/
 .row-top{
   background-color: #ebf2fc;
   height: 100px;
   width: 100%;
   padding-left: 150px;
   padding-right: 150px;
-
 }
 /*do proprietà alla prima colonna*/
 .col-lang{
   width: 30%;
   height: 100px;
-
 }
 /*do proprietà al primo box perchè stia al centro del contenitore*/
 .box-lang{
@@ -42,6 +38,7 @@
   top: 50%;
   transform: translate(0%, -50%);
 }
+/*do proprietà all'icon vicina alla selezione lingua*/
 .topglobe{
   float: left;
   position: relative;
@@ -54,7 +51,12 @@
   padding-right: 5px;
   border-right: 1px solid black;
   margin-right: 5px;
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  background-color: #ebf2fc;
 }
+/*do proprietà ai due bottoni sulla sonostra della prima row*/
 .drop-login > select{
   background-color: #ebf2fc;
   border: none;
@@ -67,21 +69,11 @@
   transform: translate(0%, -50%);
   background-color: #ebf2fc;
 }
-/*metto in mezzo ma spostati a sinistra gli elementi rispetto al contenitore*/
-.drop-login{
-  float: left;
-  position: relative;
-  top: 50%;
-  transform: translate(0%, -50%);
-  background-color: #ebf2fc;
-}
-
 /*do proprietà alla seconda colonna della row*/
 .col-login{
   width: 70%;
   height: 100px;
 }
-
 /*do proprietà al box perchè stia in mezzo ma spostato verso destra*/
 .box-login{
   height: 50px;
@@ -118,6 +110,7 @@
   color: blue;
   background-color:#ebf2fc;
 }
+/*SECONDA SEZIONE*/
 /*do proprietà alla row nav*/
 .row-nav{
   height: 100px;
@@ -179,6 +172,7 @@
   border: none;
   background-color: white;
 }
+/*TERZA SEZIONE*/
 /*do proprietà alla row contenente il testo e l'img di sfondo*/
 .row-immagine{
   height: 700px;
@@ -207,6 +201,7 @@ font-family: sans-serif;
   padding: 20px;
   border-radius: 5px;
 }
+/*QUARTA SEZIONE*/
 /*do proprietà alla row della linea che separa le sezioni*/
 .row-linea{
   height: 100px;
@@ -214,7 +209,7 @@ font-family: sans-serif;
   background-color: #4cedda;
   border: 3px solid black;
 }
-
+/*QUINTA SEZIONE*/
 /*do proprietà al contenitore della aprte centrale della pagina*/
 .central{
   width: 100%;
@@ -223,7 +218,6 @@ font-family: sans-serif;
   position: relative;
   padding-left: 150px;
   padding-right: 150px;
-
 }
 /*do proprietà alla prima row del central*/
 .row-pres{
@@ -254,6 +248,7 @@ font-family: sans-serif;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*do proprietà ai testi dentro alla box*/
 .box-slog > h1{
   font-size: 30px;
 }
@@ -280,7 +275,6 @@ font-family: sans-serif;
   width: 30%;
 }
 /*do proprietà alla box dell'img*/
-
 .row-free .col-feat{
   height:100%;
   width: 70%;
@@ -319,7 +313,6 @@ line-height: 35px;
   width: 100%;
   height: 600px;
   position: relative;
-
 }
 /*do proprietà alla box superiore con l'img delle tre col*/
 .centerimg{
@@ -345,7 +338,6 @@ transform: translate(-50%, -50%);
 text-align: center;
 padding-right: 10px;
 padding-left: 10px;
-
 }
 .centerbtn > p{
   text-align: left;
@@ -358,27 +350,23 @@ padding-left: 10px;
 .centerimg img{
   width: 25%;
 }
-
 /*do proprietà alle tre colonne della terza row*/
-
 .col-mark, .col-sales, .col-service{
   width: 30%;
   height: 500px;
   background-color: white;
   margin-top: 80px;
   position: relative;
-
 }
 /*do i margini alla colonna centrake*/
 .col-sales{
   margin-left: 50px;
   margin-right: auto;
 }
-
 .col-service{
   float: right;
 }
-
+/*SESTA SEZIONE*/
 /*do proprietà alla row contenente la descrizione e la table*/
 .row-n{
   background-color: #3dc4b4;
@@ -399,6 +387,7 @@ padding-left: 10px;
   text-align: center;
   color: white;
 }
+/*do proprietà ai testi della row*/
 .row-desc h2{
   font-size: 30px;
 }
@@ -414,6 +403,7 @@ padding-left: 10px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*do proprietà alla table*/
 .row-table table{
   width: 100%;
   height: 350px;
@@ -424,10 +414,12 @@ padding-left: 10px;
   width: 30px;
   height: 30px;
 }
+/*do proprietà all'img*/
 #hubs{
   width: 30px;
   height: 20px;
 }
+/*do i bordi alle celle*/
 .up td:first-child{
   border-bottom: 1px solid white;
   border-right: 1px solid white;
@@ -453,7 +445,7 @@ padding-left: 10px;
 .down td:last-child{
   border-left: 1px solid white;
 }
-
+/*SETTIMA SEZIONE*/
 /*do proprietà alla row in basso che è suddivisa in 2 colonne*/
 .row-bottom{
   height: 600px;
@@ -462,22 +454,24 @@ padding-left: 10px;
   padding-left: 150px;
   padding-right: 150px;
 }
+/*do proprietà alle col*/
 .col-custom{
   width: 40%;
   height: 500px;
   position: relative;
-
 }
 .col-sponsor{
   width: 60%;
   height: 500px;
   position: relative;
 }
+/*do proprietà all'img*/
 .col-sponsor img{
   width: 80px;
   height: 80px;
   margin-left: 10px;
 }
+/*do proprietà ai box interni*/
 .box-custom{
   width: 70%;
   height: 40%;
@@ -495,9 +489,11 @@ padding-left: 10px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*do proprietà al bottone*/
 .row-bottom .redbtn{
   padding: 20px;
 }
+/*do proprietà ai testi*/
 .box-custom h2{
   font-size: 50px;
 }
@@ -507,24 +503,25 @@ padding-left: 10px;
 .box-start p:last-child{
   font-size: 13px;
 }
+/*do proprietà ai box interni alla col*/
 .sponsorbox{
   width: 80%;
   height: 150px;
   float: left;
-
-
 }
 .boxspot{
   width: 70%;
   height: 350px;
   float: right;
 }
+/*do proprietà all'img*/
 .boxspot img{
   width: 270px;
   height: 350px;
   float: right;
   margin-top: 20px;
 }
+/*OTTAVA SEZIONE*/
 /*do proprietà alla row del footer*/
 .row-footer{
   height: 700px;
@@ -549,6 +546,7 @@ padding-left: 10px;
 .col-con,.col-sup, .col-manage{
   margin-left: 40px;
 }
+/*do proprietà al bottone dell'ultima col*/
 .col-sup button{
   padding: 10px;
   border-radius: 5px;
@@ -556,25 +554,30 @@ padding-left: 10px;
   margin-top: 15px;
   border: none;
 }
+/*do proprietà alle icone dell'ultima col*/
 .col-sup i{
   margin-left: 10px;
   margin-right: 15px;
   margin-top: 15px;
 }
+/*do proprietà alla row'*/
 .row-end{
   width: 100%;
   height: 200px;
   position: relative;
 }
+/*do proprietà agli elementi della lista*/
 .row-end li{
   display: inline-block;
   margin-left: 40px;
   color: white;
 }
+/*do proprietà alla lista*/
 ul{
   text-align: center;
   margin-bottom: 20px;
 }
+/*do proprietà alla prima col*/
 .col-copy{
   width: 50%;
   height: 150px;
@@ -582,24 +585,23 @@ ul{
   margin-top: 30px;
   color: white;
 }
+/*do proprietà all'img dentro la col*/
 .col-copy img{
   width: 150px;
   height: 100px;
 }
+/*do proprietà alla seconda col*/
 .col-pr{
   width: 50%;
   height: 150px;
   position: relative;
   margin-top: 30px;
-
 }
+/*do proprietà ai testi*/
 .col-pr p{
   display: inline-block;
   float: right;
   margin-right: 10px;
   margin-top: 100px;
   color: white;
-
-
-
 }
