@@ -4,6 +4,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
+h1, h2, h3, p, li{
+  font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 /*do le proprietà alla row per il float delle colonne*/
 .row::after{
   clear: both;
@@ -57,7 +60,7 @@
   background-color: #ebf2fc;
 }
 /*do proprietà ai due bottoni sulla sonostra della prima row*/
-.drop-login > select{
+.drop-login select{
   background-color: #ebf2fc;
   border: none;
 }
@@ -83,7 +86,7 @@
   right: 10px;
 }
 /*inserisco i bottoni in mezzo spostati a destra rispetto al loro contenitore*/
-.box-login > button {
+.box-login button {
   float: right;
   position: relative;
   top: 50%;
@@ -106,10 +109,11 @@
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 5px;
+  font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #search{
   border: none;
-  color: blue;
+  color: lightblue;
   background-color:#ebf2fc;
 }
 /*SECONDA SEZIONE*/
@@ -139,7 +143,7 @@
 }
 /*do proprietà al logo*/
 .box-logo img{
-  width: 100%;
+  width: 100px;
   height: 100%;
   text-align: left;
 }
@@ -164,33 +168,35 @@
   background-color: white;
   position: absolute;
   top: 50%;
-  transform: translate(0%, -50%);
+  left: 25%;
+  transform: translate(-0%, -50%);
 }
+
 .drop-nav > select{
   border:none;
+  font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
 /*do proprietà solo al button della nav senza dropdown*/
 #pricebtn{
   border: none;
   background-color: white;
+  font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;"
 }
 /*TERZA SEZIONE*/
 /*do proprietà alla row contenente il testo e l'img di sfondo*/
 .row-immagine{
   height: 600px;
   width: 100%;
-
   position: relative;
-
 }
 .background{
   height: 700px;
   width: 100%;
   background-image: url("../img/jumbotron.png");
-  background-size: auto;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 100%, 100% ;
-
+  background-position: 50%, 50% ;
 }
 /*do proprietà alla box sovrapposta all'img*/
 .box-nextimg{
@@ -205,9 +211,8 @@
   font-size: 50px;
 }
 /*do proprietà all'elemento h2 e p*/
-.box-nextimg > h1, p{
-font-family: sans-serif;
-text-align: left;
+.box-nextimg h1, .box-nextimg p{
+  text-align: left;
 }
 /*do proprietà al bottone dentro il box*/
 .box-nextimg .redbtn{
@@ -267,7 +272,7 @@ text-align: left;
   font-size: 30px;
 }
 .box-slog > h1, .box-slog> p{
-  font-family: sans-serif;
+
   text-align: center;
 }
 /*do proprietà alla seconda row del central*/
@@ -282,6 +287,7 @@ text-align: left;
   height: 100%;
   width: 100%;
   border-radius: 5px;
+  box-shadow: 0 0 2px 2px lightgrey;
 }
 /*do proprietà alle due colonne del box*/
 .row-free .col-learn{
@@ -313,316 +319,363 @@ text-align: left;
 }
 /*do proprietà agòi h3 e alle p*/
 .col-feat h3, .col-feat p{
-margin-left: 20px;
-margin-top: 10px;
-margin-right: 10px;
-text-align: left;
-line-height: 35px;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: left;
+  line-height: 35px;
 }
 /*do proprietà inline alla p*/
 .col-feat p{
   display: inline;
 }
-.row-exp{
-  width: 100%;
-  height: 600px;
-  position: relative;
-}
-/*do proprietà alla box superiore con l'img delle tre col*/
-.centerimg{
-  width: 100%;
-  height: 60%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-}
-/*do proprietà alla box inferiore con il bottone delle tre col*/
-.centerbtn{
-width: 100%;
-height: 40%;
-position: absolute;
-top: 85%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
-padding-right: 10px;
-padding-left: 10px;
-}
-.centerbtn > p{
-  text-align: left;
-}
-/*do proprietà al bottone nelle col*/
-.centerbtn .redbtn{
-  padding: 20px;
-  border-radius: 5px;
-}
-.centerimg img{
-  width: 25%;
-}
-/*do proprietà alle tre colonne della terza row*/
-.col-mark, .col-sales, .col-service{
-  width: 30%;
-  height: 500px;
-  background-color: white;
-  margin-top: 80px;
-  position: relative;
-}
-/*do i margini alla colonna centrake*/
-.col-sales{
-  margin-left: 50px;
-  margin-right: auto;
-}
-.col-service{
-  float: right;
-}
-/*SESTA SEZIONE*/
-/*do proprietà alla row contenente la descrizione e la table*/
-.row-n{
-  background-color: #3dc4b4;
-  width: 100%;
-  height: 700px;
-  padding-left: 200px;
-  padding-right: 200px;
-  position: relative;
-}
-/*do proprietà alla row con la descrizione*/
-.row-desc{
-  height: 200px;
-  width: 700px;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-/*do proprietà ai testi della row*/
-.row-desc h2{
-  font-size: 30px;
-}
-.row-desc p{
-  font-size: 15px;
-}
-/*do proprietà alla row con la table*/
-.row-table{
-  height: 350px;
-  width: 900px;
-  position: absolute;
-  top:70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-/*do proprietà alla table*/
-.row-table table{
-  width: 100%;
-  height: 350px;
-  text-align: center;
-  color: white;
-  table-layout: fixed;
 
-}
-.row-table h2, .row-table p{
-  text-align: center;
-}
-
-.row-table .Uno{
-  width: 30px;
-  height: 30px;
-}
-.row-table .Due{
-  width: 60px;
-  height: 60px;
-}
-
-/*do i bordi alle celle*/
-.up td:first-child{
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
-}
-.up td:last-child{
-  border-bottom: 1px solid white;
-  border-left: 1px solid white
-}
-.up td:nth-child(2){
-  border-bottom: 1px solid white;
-
-}
-.up td:nth-child(3){
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
-}
-.down td:first-child{
-  border-right: 1px solid white;
-}
-.down td:nth-child(3){
-  border-left: 1px solid white;
-}
-.down td:last-child{
-  border-left: 1px solid white;
-}
-/*SETTIMA SEZIONE*/
-/*do proprietà alla row in basso che è suddivisa in 2 colonne*/
-.row-bottom{
-  height: 600px;
-  width: 100%;
-  background-color: white;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-/*do proprietà alle col*/
-.col-custom{
-  width: 40%;
-  height: 500px;
-  position: relative;
-}
-.col-sponsor{
-  width: 60%;
-  height: 500px;
-  position: relative;
-}
-/*do proprietà all'img*/
-.col-sponsor img{
-  width: 80px;
-  height: 80px;
-  margin-left: 10px;
-}
-/*do proprietà ai box interni*/
-.box-custom{
-  width: 70%;
-  height: 40%;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.box-start{
-  width: 100%;
-  height: 60%;
-  position: absolute;
-  top:75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-/*do proprietà al bottone*/
-.row-bottom .redbtn{
-  padding: 20px;
-}
-/*do proprietà ai testi*/
-.box-custom h2{
-  font-size: 50px;
-}
-.box-start h2{
-  font-size: 30px;
-}
-.box-start p:last-child{
-  font-size: 13px;
-}
-/*do proprietà ai box interni alla col*/
-.sponsorbox{
-  width: 80%;
-  height: 150px;
-  float: left;
-}
-.boxspot{
-  width: 70%;
-  height: 350px;
-  float: right;
-}
-/*do proprietà all'img*/
-.boxspot img{
-  width: 300px;
-  height: 350px;
-  float: right;
-  margin-top: 20px;
-}
-/*OTTAVA SEZIONE*/
-/*do proprietà alla row del footer*/
-.row-footer{
-  height: 700px;
-  width: 100%;
-  background-color: #104578;
-  padding-left: 150px;
-    padding-right: 150px;
-  padding-top: 30px;
-}
-.row-info{
-  width: 100%;
-  height: 400px;
-}
-/*do proprietà comuni alle 4 col*/
-.col-tra, .col-con, .col-manage, .col-sup{
-  width: 20%;
-  height: 350px;
-  line-height: 30px;
-  color: white;
-}
-/*do proprietà a 3 col per i margin*/
-.col-con,.col-sup, .col-manage{
-  margin-left: 40px;
-}
-/*do proprietà al bottone dell'ultima col*/
-.col-sup button{
-  padding: 10px;
-  border-radius: 5px;
-  background-color: lightgrey;
-  margin-top: 15px;
-  border: none;
-}
-/*do proprietà alle icone dell'ultima col*/
-.col-sup i{
-  margin-left: 10px;
-  margin-right: 15px;
-  margin-top: 15px;
-}
-/*do proprietà alla row'*/
-.row-end{
-  width: 100%;
-  height: 200px;
-  position: relative;
-}
-/*do proprietà agli elementi della lista*/
-.row-end li{
+.popf li{
   display: inline-block;
-  margin-left: 40px;
-  color: white;
+  list-style: none;
+  margin-right: 20px;
 }
-/*do proprietà alla lista*/
-ul{
-  text-align: center;
-  margin-bottom: 20px;
-}
-/*do proprietà alla prima col*/
-.col-copy{
-  width: 50%;
-  height: 150px;
-  position: relative;
-  margin-top: 30px;
-  color: white;
-}
-/*do proprietà all'img dentro la col*/
-.col-copy img{
-  width: 100px;
-  height: 50px;
-
-}
-/*do proprietà alla seconda col*/
-.col-pr{
-  width: 50%;
-  height: 150px;
-  position: relative;
-  margin-top: 30px;
-}
-/*do proprietà ai testi*/
-.col-pr p{
-  display: inline-block;
-  float: right;
+.popf i{
   margin-right: 10px;
-  margin-top: 50px;
-  color: white;
 }
+.col-feat .fa-check-circle:before{
+  color: #ff7a59;}
+  .row-exp{
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+  /*do proprietà alla box superiore con l'img delle tre col*/
+  .centerimg{
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  /*do proprietà alla box inferiore con il bottone delle tre col*/
+  .centerbtn{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  /*do proprietà al bottone nelle col*/
+  .centerbtn .redbtn{
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .centerimg img{
+    width: 25%;
+  }
+  /*do proprietà alle tre colonne della terza row*/
+  .col-mark, .col-sales, .col-service{
+    width: 30%;
+    height: 550px;
+    background-color: white;
+    margin-top: 80px;
+    position: relative;
+    box-shadow: 0 0 2px 2px lightgrey;
+  }
+  .col-mark img{
+    margin-top: 5px;
+  }
+  /*do i margini alla colonna centrake*/
+  .col-sales{
+    margin-left: 50px;
+    margin-right: auto;
+  }
+  .col-sales img{
+    margin-top: 20px;
+  }
+  .centerimg hr{
+    border: 1px solid black;
+    color: black;
+  }
+  .col-service{
+    float: right;
+  }
+  *.centerimg{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  *.centerbtn{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .centerbtn .fa-check-circle:before{
+    color: #ff7a59;
+  }
+  .left i{
+    margin-right: 10px;
+  }
+  .left li{
+    list-style: none;
+    text-align: left;
+    text-decoration: none;
+  }
+  /*SESTA SEZIONE*/
+  /*do proprietà alla row contenente la descrizione e la table*/
+  .row-n{
+    background-color: #3dc4b4;
+    width: 100%;
+    height: 700px;
+    padding-left: 200px;
+    padding-right: 200px;
+    position: relative;
+  }
+  /*do proprietà alla row con la descrizione*/
+  .row-desc{
+    height: 200px;
+    width: 700px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  /*do proprietà ai testi della row*/
+  .row-desc h2{
+    font-size: 30px;
+  }
+  .row-desc p{
+    font-size: 15px;
+  }
+  /*do proprietà alla row con la table*/
+  .row-table{
+    height: 350px;
+    width: 900px;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*do proprietà alla table*/
+  .row-table table{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    color: white;
+    table-layout: fixed;
+
+  }
+  .row-table h2, .row-table p{
+    text-align: center;
+  }
+  /*do proprietà alle immagini a seconda della loro grandezza*/
+  .row-table .Uno{
+    width: 30px;
+    height: 30px;
+  }
+  .row-table .Due{
+    width: 60px;
+    height: 60px;
+  }
+
+  /*do i bordi alle celle*/
+  .up td:first-child{
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+  }
+  .up td:last-child{
+    border-bottom: 1px solid white;
+    border-left: 1px solid white
+  }
+  .up td:nth-child(2){
+    border-bottom: 1px solid white;
+
+  }
+  .up td:nth-child(3){
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+  }
+  .down td:first-child{
+    border-right: 1px solid white;
+  }
+  .down td:nth-child(3){
+    border-left: 1px solid white;
+  }
+  .down td:last-child{
+    border-left: 1px solid white;
+  }
+  /*SETTIMA SEZIONE*/
+  /*do proprietà alla row in basso che è suddivisa in 2 colonne*/
+  .row-bottom{
+    height: 600px;
+    width: 100%;
+    background-color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  /*do proprietà alle col*/
+  .col-custom{
+    width: 40%;
+    height: 500px;
+    position: relative;
+  }
+  .col-sponsor{
+    width: 60%;
+    height: 500px;
+    position: relative;
+  }
+  /*do proprietà all'img*/
+  .col-sponsor img{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+  }
+  /*do proprietà ai box interni*/
+  .box-custom{
+    width: 70%;
+    height: 40%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .box-start{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top:75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*do proprietà al bottone*/
+  .row-bottom .redbtn{
+    padding: 20px;
+  }
+  /*do proprietà ai testi*/
+  .box-custom h2{
+    font-size: 50px;
+  }
+  .box-start h2{
+    font-size: 30px;
+  }
+  .box-start p:last-child{
+    font-size: 13px;
+  }
+  /*do proprietà ai box interni alla col*/
+  .sponsorbox{
+    width: 80%;
+    height: 150px;
+    float: left;
+  }
+  .boxspot{
+    width: 70%;
+    height: 350px;
+    float: right;
+  }
+  /*do proprietà all'img*/
+  .boxspot img{
+    width: 300px;
+    height: 350px;
+    float: right;
+    margin-top: 20px;
+  }
+  /*OTTAVA SEZIONE*/
+  /*do proprietà alla row del footer*/
+  .row-footer{
+    height: 700px;
+    width: 100%;
+    background-color: #104578;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 30px;
+  }
+  .row-info{
+    width: 100%;
+    height: 400px;
+  }
+  .row-info ul{
+    list-style: none;
+  }
+  .row-info a, .row-end a{
+    color: white;
+    text-decoration: none;
+    font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+  }
+  /*do proprietà comuni alle 4 col*/
+  .col-tra, .col-con, .col-manage, .col-sup{
+    width: 20%;
+    height: 350px;
+    line-height: 30px;
+    color: white;
+  }
+  /*do proprietà a 3 col per i margin*/
+  .col-con,.col-sup, .col-manage{
+    margin-left: 40px;
+  }
+  /*do proprietà al bottone dell'ultima col*/
+  .col-sup button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    margin-top: 15px;
+    border: none;
+  }
+  /*do proprietà alle icone dell'ultima col*/
+  .col-sup i{
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+  /*do proprietà alla row'*/
+  .row-end{
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+  /*do proprietà agli elementi della lista*/
+  .row-end li{
+    display: inline-block;
+    margin-left: 40px;
+    color: white;
+  }
+  /*do proprietà alla lista*/
+  .row-end ul{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  /*do proprietà alla prima col*/
+  .col-copy{
+    width: 50%;
+    height: 150px;
+    position: relative;
+    margin-top: 30px;
+    color: white;
+  }
+  /*do proprietà all'img dentro la col*/
+  .col-copy img{
+    width: 100px;
+    height: 50px;
+
+  }
+  /*do proprietà alla seconda col*/
+  .col-pr{
+    width: 50%;
+    height: 150px;
+    position: relative;
+    margin-top: 30px;
+  }
+  /*do proprietà ai testi*/
+  .col-pr p{
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 50px;
+    color: white;
+  }

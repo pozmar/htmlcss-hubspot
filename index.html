@@ -42,7 +42,7 @@
         <!--creo due colonne separate. la prima per il logo con box corrispondente-->
         <div class="col col-logo">
           <div class="box box-logo">
-            <img src="img/hubspot-logo.svg" alt="logo hubspot">
+            <img src="img/logo.svg" alt="logo hubspot">
           </div>
         </div>
         <!--creo col della nav e box-->
@@ -50,7 +50,7 @@
           <div class="box box-nav">
             <!--creo una nav con dentro tutti i bottoni tranne uno con la dropdown-->
             <nav>
-              <div class="dropdown drop-nav">
+              <div class="dropdown drop-nav" >
                 <select>
                   <option>Software</option>
                 </select>
@@ -73,18 +73,16 @@
     <!--TERZA SEZIONE creo una sezione per l'immagine-->
     <div class="row row-immagine">
       <div class="background">
-
-
-      <div class="box box-nextimg">
-        <!--inserisco le scritte e il bottone-->
-        <h1>There's a better way to grow</h1><br></br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
-        <br><br>
-        <button class="redbtn" type="button ">GetHubspotFree</button>
-        <br><br><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
-      </div>
+        <div class="box box-nextimg">
+          <!--inserisco le scritte e il bottone-->
+          <h1>There's a better way to grow</h1><br></br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
+          <br><br>
+          <button class="redbtn" type="button ">GetHubspotFree</button>
+          <br><br><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
         </div>
+      </div>
     </div>
     <!--QUARTA SEZIONE creo una sezione per la linea colorata dopo l'img-->
     <div class="row row-linea">
@@ -108,7 +106,7 @@
         <div class="box box-free">
           <div class="col col-learn">
             <img src="img/book.svg" alt="libro">
-            <button class="redbtn" type="button ">GetHubspotFree</button>
+            <button class="redbtn" type="button ">Learn More</button>
           </div>
           <div class="col col-feat">
             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
@@ -116,9 +114,13 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             <br>
             <h3>POPULAR FEATURE</h3>
-            <p><i class="fa fa-check-circle" aria-hidden="true"></i>Contract Insight</p>
-            <p><i class="fa fa-check-circle" aria-hidden="true"></i>Deals</p>
-            <p><i class="fa fa-check-circle" aria-hidden="true"></i>Task</p>
+            <div class="popf">
+              <ul>
+                <li> <i class="fa fa-check-circle" aria-hidden="true"></i>Contract Insight</li>
+                <li><i class="fa fa-check-circle" aria-hidden="true"></i>Deals</li>
+                <li><i class="fa fa-check-circle" aria-hidden="true"></i>Task</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -136,11 +138,15 @@
           <div class="box centerbtn">
             <h4>POPOLAR FEATURE</h4>
             <br>
-            <p><i class="fa fa-check-circle" aria-hidden="true"></i>Contract Insight</p>
-            <p><i class="fa fa-check-circle" aria-hidden="true"></i>Deals</p>
-            <p><i class="fa fa-check-circle" aria-hidden="true"></i>Task</p>
+            <div class="left">
+              <ul>
+                <li> <i class="fa fa-check-circle" aria-hidden="true"></i>Contract Insight</li>
+                <li><i class="fa fa-check-circle" aria-hidden="true"></i>Deals</li>
+                <li><i class="fa fa-check-circle" aria-hidden="true"></i>Task</li>
+              </ul>
+            </div>
             <br>
-            <button class="redbtn" type="button ">GetHubspotFree</button>
+            <button class="redbtn" type="button">Learn More</button>
           </div>
         </div>
         <div class="col col-sales">
@@ -156,11 +162,15 @@
           </hr>
           <h4>POPOLAR FEATURE</h4>
           <br>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Contract Insight</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Deals</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Task</p>
+          <div class="left">
+            <ul>
+              <li> <i class="fa fa-check-circle" aria-hidden="true"></i>Contract Insight</li>
+              <li><i class="fa fa-check-circle" aria-hidden="true"></i>Deals</li>
+              <li><i class="fa fa-check-circle" aria-hidden="true"></i>Task</li>
+            </ul>
+          </div>
           <br>
-          <button class="redbtn" type="button ">GetHubspotFree</button>
+          <button class="redbtn" type="button ">Learn More</button>
         </div>
       </div>
       <div class="col col-service">
@@ -175,159 +185,176 @@
         <div class="box centerbtn">
           <h4>POPOLAR FEATURE</h4>
           <br>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Contract Insight</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Deals</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Task</p>
+          <div class="left">
+            <ul>
+              <li> <i class="fa fa-check-circle" aria-hidden="true"></i>Contract Insight</li>
+              <li><i class="fa fa-check-circle" aria-hidden="true"></i>Deals</li>
+              <li><i class="fa fa-check-circle" aria-hidden="true"></i>Task</li>
+            </ul>
+          </div>
           <br>
-          <button class="redbtn" type="button ">GetHubspotFree</button>
+          <button class="redbtn" type="button ">Learn More</button>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!--SESTA SEZIONE creo la row per la sezione con descrizione e tabella suddivise a loro volta in deu row separate-->
-<div class="row row-n">
-  <div class="row row-desc">
-    <h2><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit</strong> </h2>
-    <br><br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  </div>
-  <div class="row row-table">
-    <table>
-      <tr class="up">
 
-        <td><img class="Uno" src="img/agency.svg" alt="agency"></img>
-          <h2>150+</h2><p>Hubspot user group</p></td>
-        <td><img class="Due" src="img/blog.svg" alt="hub"><h2>4.5M+</h2><p>monthly visits</p>
-        </td>
-        <td><img class="Due" src="img/academy.svg" alt="academy"></img>
-          <h2>155K+</h2><p>certified professionals</p></td>
-        <td><img class="Due" src="img/inbound.svg" alt="inbound">
-          <h2>21K+</h2><p>registered attendees</p></td>
-        </tr>
-        <tr class="down">
-          <td><img class="Due" src="img/conn.svg" alt="hubs">
-            <h2>150+</h2><p>Hubspot user group</p>
-          </td>
-          <td><img class="Uno"src="img/globe.svg" alt="globe"></img><h2>6+</h2><p>Languages</p></td>
-          <td><img class="Uno"src="img/foll.svg" alt="followers"></img><h2>2.6M+</h2><p>social followers</p></td>
-          <td><img class="Due" src="img/hub-s.svg" alt="hub">
-            <h2>5K+</h2><p>profiles and counting</p></td>
-          </tr>
-        </table>
-      </div>
+  <!--SESTA SEZIONE creo la row per la sezione con descrizione e tabella suddivise a loro volta in deu row separate-->
+  <div class="row row-n">
+    <div class="row row-desc">
+      <h2><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit</strong> </h2>
+      <br><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
     </div>
-    <!--SETTIMA SEZIONE creo la row per la parte sotto della pagina suddivisa in due colonne e con i box all'interno-->
-    <div class="row row-bottom">
-      <div class="col col-custom">
-        <div class="box box-custom">
-          <h2>64,500</h2>
-          <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
-        </div>
-        <div class="box box-start">
-          <h2>Start growing with hubspot Today</h2>
-          <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-          <br><br>
-          <button class="redbtn" type="button ">GetHubspotFree</button>
-          <br><br>
-          <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing eli</p>
-        </div>
-      </div>
-      <!--creo la col che conterrà gli sponsor e l'img-->
-      <div class="col col-sponsor">
-        <div class="box sponsorbox">
-          <img src="img/atlas.png" alt="atlas">
-          <img src="img/door.png" alt="doordash">
-          <img src="img/crows.png" alt="crowd">
-          <img src="img/purple.png" alt="purple">
-          <img src="img/subaru.png" alt="subaru">
-          <img src="img/wis.jpg" alt="wistia">
-          <img src="img/class.jpg" alt="classpass">
-          <img src="img/vm.png" alt="ware">
-        </div>
-        <div class="box boxspot">
-          <img src="img/woman.webp" alt="pic woman"></img>
-        </div>
-      </div>
-    </div>
-    <!--OTTAVA SEZIONE creo una sezione per il footer che sarà suddiviso a sua volta in due row-->
-    <div class="row row-footer">
-      <!--suddivido la prima row in 4 colonne-->
-      <div class="row row-info">
-        <div class="col col-tra">
-          <p><strong>Increase your traffic</strong>
-          </p>
-          <br>
-          <p>Ad software</p>
-          <p>Blog Software</p>
-          <p>Seo Software</p>
-          <p>Social Media Software</p>
-          <p>Content Management System</p>
-        </div>
-        <div class="col col-con">
-          <p><strong>Increase your traffic</strong>
-          </p>
-          <br>
-          <p>Ad software</p>
-          <p>Blog Software</p>
-          <p>Seo Software</p>
-          <p>Social Media Software</p>
-          <p>Content Management System</p>
-        </div>
-        <div class="col col-manage">
-          <p><strong>Increase your traffic</strong>
-          </p>
-          <br>
-          <p>Ad software</p>
-          <p>Blog Software</p>
-          <p>Seo Software</p>
-          <p>Social Media Software</p>
-          <p>Content Management System</p>
-        </div>
-        <div class="col col-sup">
-          <p><strong>Increase your traffic</strong>
-          </p>
-          <br>
-          <p>Ad software</p>
-          <p>Blog Software</p>
-          <p>Seo Software</p>
-          <p>Social Media Software</p>
-          <p>Content Management System</p>
-          <button type="button" name="button">Contact Hubspot Support</button>
-          <br>
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-          <i class="fa fa-youtube-play" aria-hidden="true"></i>
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </div>
-<!--inserisco una row per la selezione lingua-->
-      </div>
-      <div class="row row-end">
-        <ul>
-          <li>English</li>
-          <li>English</li>
-          <li>English</li>
-          <li>English</li>
-          <li>English</li>
-          <li>English</li>
-        </ul>
-        <hr>
-<!--inserisco una row la sezione copyright e privacy suddivisa in due colonne-->
-        <div class="row row-copy">
-          <div class="col col-copy">
-            <img src="img/hubs.svg" alt="hubs">
-            <p>Copyright &copy; Hubspot, Inc.</p>
+    <div class="row row-table">
+      <table>
+        <tr class="up">
+
+          <td><img class="Uno" src="img/agency.svg" alt="agency"></img>
+            <h2>150+</h2><p>Hubspot user group</p></td>
+            <td><img class="Due" src="img/blog.svg" alt="hub"><h2>4.5M+</h2><p>monthly visits</p>
+            </td>
+            <td><img class="Due" src="img/academy.svg" alt="academy"></img>
+              <h2>155K+</h2><p>certified professionals</p></td>
+              <td><img class="Due" src="img/inbound.svg" alt="inbound">
+                <h2>21K+</h2><p>registered attendees</p></td>
+              </tr>
+              <tr class="down">
+                <td><img class="Due" src="img/conn.svg" alt="hubs">
+                  <h2>150+</h2><p>Hubspot user group</p>
+                </td>
+                <td><img class="Uno"src="img/globe.svg" alt="globe"></img><h2>6+</h2><p>Languages</p></td>
+                <td><img class="Uno"src="img/foll.svg" alt="followers"></img><h2>2.6M+</h2><p>social followers</p></td>
+                <td><img class="Due" src="img/hub-s.svg" alt="hub">
+                  <h2>5K+</h2><p>profiles and counting</p></td>
+                </tr>
+              </table>
+            </div>
           </div>
-          <div class="col col-pr">
-            <p>Privacy Policy</p>
-            <p>Legal Stuff</p>
+          <!--SETTIMA SEZIONE creo la row per la parte sotto della pagina suddivisa in due colonne e con i box all'interno-->
+          <div class="row row-bottom">
+            <div class="col col-custom">
+              <div class="box box-custom">
+                <h2>64,500</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+              </div>
+              <div class="box box-start">
+                <h2>Start growing with hubspot Today</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <br><br>
+                <button class="redbtn" type="button ">GetHubspotFree</button>
+                <br><br>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing eli</p>
+              </div>
+            </div>
+            <!--creo la col che conterrà gli sponsor e l'img-->
+            <div class="col col-sponsor">
+              <div class="box sponsorbox">
+                <img src="img/atlas.png" alt="atlas">
+                <img src="img/door.png" alt="doordash">
+                <img src="img/crows.png" alt="crowd">
+                <img src="img/purple.png" alt="purple">
+                <img src="img/subaru.png" alt="subaru">
+                <img src="img/wis.jpg" alt="wistia">
+                <img src="img/class.jpg" alt="classpass">
+                <img src="img/vm.png" alt="ware">
+              </div>
+              <div class="box boxspot">
+                <img src="img/woman.webp" alt="pic woman"></img>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+          <!--OTTAVA SEZIONE creo una sezione per il footer che sarà suddiviso a sua volta in due row-->
+          <div class="row row-footer">
+            <!--suddivido la prima row in 4 colonne-->
+            <div class="row row-info">
+              <div class="col col-tra">
+                <p><strong>Increase your traffic</strong>
+                  <br><br>
+                  <nav>
+                    <ul>
+                      <li><a href="#">Ad software</a></li>
+                      <li><a href="#">Blog Software</a></li>
+                      <li><a href="#">Seo Software</a></li>
+                      <li><a href="#">Social Media Software</a></li>
+                      <li><a href="#">Content Management System</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col col-con">
+                  <p><strong>Increase your traffic</strong>
+                    <br><br>
+                    <nav>
+                      <ul>
+                        <li><a href="#">Ad software</a></li>
+                        <li><a href="#">Blog Software</a></li>
+                        <li><a href="#">Seo Software</a></li>
+                        <li><a href="#">Social Media Software</a></li>
+                        <li><a href="#">Content Management System</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col col-manage">
+                    <p><strong>Increase your traffic</strong>
+                      <br><br>
+                      <nav>
+                        <ul>
+                          <li><a href="#">Ad software</a></li>
+                          <li><a href="#">Blog Software</a></li>
+                          <li><a href="#">Seo Software</a></li>
+                          <li><a href="#">Social Media Software</a></li>
+                          <li><a href="#">Content Management System</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="col col-sup">
+                      <p><strong>Increase your traffic</strong>
+                        <br><br>
+                        <nav>
+                          <ul>
+                            <li><a href="#">Ad software</a></li>
+                            <li><a href="#">Blog Software</a></li>
+                            <li><a href="#">Seo Software</a></li>
+                            <li><a href="#">Social Media Software</a></li>
+                            <li><a href="#">Content Management System</a></li>
+                          </ul>
+                        </nav>
+                        <button type="button" name="button">Contact Hubspot Support</button>
+                        <br>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                      </div>
+                      <!--inserisco una row per la selezione lingua-->
+                    </div>
+                    <div class="row row-end">
+                      <ul>
+                        <li><a href="#">English</li></a>
+                        <li><a href="#">Deutsch</li></a>
+                        <li><a href="#">日本語</li></a>
+                        <li><a href="#">Espa&ntilde;ol</li></a>
+                        <li><a href="#">Portugu&ecirc;s</li></a>
+                        <li><a href="#">Fran&ccedil;ais</li></a>
+                      </ul>
+                      <hr>
+                      <!--inserisco una row la sezione copyright e privacy suddivisa in due colonne-->
+                      <div class="row row-copy">
+                        <div class="col col-copy">
+                          <img src="img/hubs.svg" alt="hubs">
+                          <p>Copyright &copy; Hubspot, Inc.</p>
+                        </div>
+                        <div class="col col-pr">
+                          <p><a href="#">Privacy Policy</a></p>
+                          <p><a href="#">Legal Stuff</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </body>
+            </html>
