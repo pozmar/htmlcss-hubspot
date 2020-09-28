@@ -9,10 +9,12 @@
 <body>
   <!--Creo container per l'intera pagina-->
   <div class="container">
-    <!--PRIMA SEZIONE Creo la row per la riga in alto-->
+    <!--PRIMA SEZIONE. Creo un header per le prime due righe e creo la row per la riga in alto-->
     <header>
-      <div class="row row-top">
+      <!--Header Prima Riga-->
+      <section class="row row-top">
         <!--creo due colonne separate-->
+        <!--Prima colonna-->
         <div class="col col-lang">
           <!--creo box per selezione lingua-->
           <div class="box box-lang">
@@ -27,7 +29,7 @@
             <button class="lang" type="button">Contact Us</button>
           </div>
         </div>
-        <!--creo colonna con dentro box del login-->
+        <!--Seconda colonna. Creo colonna con dentro box del login-->
         <div class="col col-login">
           <!-- creo box interno alla seconda colonna-->
           <div class="box box-login">
@@ -36,16 +38,18 @@
             <button id="search" type="submit"><i class="fa fa-search"></i></button>
           </div>
         </div>
-      </div>
+      </section>
+      <!--Header Seconda riga-->
       <!--SECONDA SEZIONE creo una row per la nav-->
-      <div class="row row-nav">
+      <section class="row row-nav">
         <!--creo due colonne separate. la prima per il logo con box corrispondente-->
+        <!--Prima colonna-->
         <div class="col col-logo">
           <div class="box box-logo">
             <img src="img/logo.svg" alt="logo hubspot">
           </div>
         </div>
-        <!--creo col della nav e box-->
+        <!--Seconda colonna. Creo col della nav e box-->
         <div class="col col-nav">
           <div class="box box-nav">
             <!--creo una nav con dentro tutti i bottoni tranne uno con la dropdown-->
@@ -68,10 +72,10 @@
             </nav>
           </div>
         </div>
-      </div>
+      </section>
     </header>
     <!--TERZA SEZIONE creo una sezione per l'immagine-->
-    <div class="row row-immagine">
+    <section class="row row-immagine">
       <div class="background">
         <div class="box box-nextimg">
           <!--inserisco le scritte e il bottone-->
@@ -83,13 +87,15 @@
           <p>Get started with FREE tools, and upgrade as you grow.</p>
         </div>
       </div>
-    </div>
+    </section>
     <!--QUARTA SEZIONE creo una sezione per la linea colorata dopo l'img-->
-    <div class="row row-linea">
-    </div>
-    <!--QUINTA SEZIONE DIVISA IN 3 ROW creo una container per la parte centrale e la divido in 3 row-->
-    <div class="central">
-      <div class="row row-pres">
+    <section class="row row-linea">
+    </section>
+    <!--Creo il main che conterrà la sezione centrale con 3 row -->
+    <!--QUINTA SEZIONE DIVISA IN 3 ROW. creo una container per la parte centrale e la divido in 3 row-->
+    <main class="central">
+      <!--Main Prima Riga-->
+      <section class="row row-pres">
         <!--creo una box per l'immagine del cubo-->
         <div class="box box-cube">
           <img src="img/cube.webp" alt="cubo">
@@ -100,9 +106,10 @@
           <br>
           <p>Hubspot offers a full stack of softare for marketing, sales and customer service, with a completely free CRM at its core. They're powerful alone - but even better when used together.</p>
         </div>
-      </div>
+      </section>
+      <!--Main Seconda Riga-->
       <!--creo una row per il box in centro suddiviso in due colonne-->
-      <div class="row row-free">
+      <section class="row row-free">
         <div class="box box-free">
           <div class="col col-learn">
             <img src="img/book.svg" alt="libro">
@@ -124,9 +131,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!--Main Terza Riga-->
       <!--creo la terza row del central dove inserisco le tre colonne-->
-      <div class="row row-exp">
+      <section class="row row-exp">
+        <!--Prima colonna-->
         <div class="col col-mark">
           <div class="box centerimg">
             <img src="img/box.svg" alt="box">
@@ -136,7 +145,6 @@
             <div class="testo">
               <p>Marketing software to help you grow traffic, convert more visitors,and run complete inbound marketing campaign at scale.</p>
             </div>
-
             <br><br><br><hr>
           </div>
           <div class="box centerbtn">
@@ -153,6 +161,7 @@
             <button class="redbtn" type="button">Learn More</button>
           </div>
         </div>
+        <!--Seconda colonna-->
         <div class="col col-sales">
           <div class="box centerimg">
             <img src="img/office.svg" alt="box">
@@ -160,9 +169,8 @@
             <h2>Sales Hub</h2>
             <br>
             <div class="testo">
-                <p>Time-saving sales software that helps you get deeper insights into prospects, automate the tasks you hate and close more deals faster.</p>
+              <p>Time-saving sales software that helps you get deeper insights into prospects, automate the tasks you hate and close more deals faster.</p>
             </div>
-
             <br><br><br><hr>
           </div>
           <div class="box centerbtn">
@@ -180,6 +188,7 @@
           <button class="redbtn" type="button ">Learn More</button>
         </div>
       </div>
+      <!--Terza colonna-->
       <div class="col col-service">
         <div class="box centerimg">
           <img src="img/computer.svg" alt="box">
@@ -187,9 +196,8 @@
           <h2>Service Hub</h2>
           <br>
           <div class="testo">
-              <p>Customer service software to help you connect with customers, exceed expectations, and turn them into promoters that grow your business.</p>
+            <p>Customer service software to help you connect with customers, exceed expectations, and turn them into promoters that grow your business.</p>
           </div>
-
           <br><br></br><hr>
         </div>
         <div class="box centerbtn">
@@ -206,20 +214,21 @@
           <button class="redbtn" type="button ">Learn More</button>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <!--SESTA SEZIONE creo la row per la sezione con descrizione e tabella suddivise a loro volta in deu row separate-->
-  <div class="row row-n">
-    <div class="row row-desc">
+  <!--SESTA SEZIONE creo la row per la sezione con descrizione e tabella suddivise a loro volta in due row separate-->
+  <section class="row row-n">
+    <!--Prima Riga-->
+    <section class="row row-desc">
       <h2><strong>Learn and grow with award-winning support and a thriving community behind you.</strong> </h2>
       <br><br>
       <p>You don't have to go it alone. Master the inbound methodology and get the most out of your tools with Hubspot's legendary customer support team and a community of thousands of marketing and sales pros just like you. </p>
-    </div>
-    <div class="row row-table">
+    </section>
+    <!--Seconda Riga-->
+    <section class="row row-table">
       <table>
         <tr class="up">
-
           <td><img class="Uno" src="img/agency.svg" alt="agency"></img>
             <h2>150+</h2><p>Hubspot user group</p></td>
             <td><img class="Due" src="img/blog.svg" alt="hub"><h2>4.5M+</h2><p>monthly visits</p>
@@ -239,10 +248,10 @@
                   <h2>5K+</h2><p>profiles and counting</p></td>
                 </tr>
               </table>
-            </div>
-          </div>
+            </section>
+          </section>
           <!--SETTIMA SEZIONE creo la row per la parte sotto della pagina suddivisa in due colonne e con i box all'interno-->
-          <div class="row row-bottom">
+          <section class="row row-bottom">
             <div class="col col-custom">
               <div class="box box-custom">
                 <h2>64,500</h2>
@@ -276,14 +285,17 @@
                 <img src="img/woman.webp" alt="pic woman"></img>
               </div>
             </div>
-          </div>
+          </section>
           <!--OTTAVA SEZIONE creo una sezione per il footer che sarà suddiviso a sua volta in due row-->
-          <div class="row row-footer">
+          <section class="row row-footer">
             <!--suddivido la prima row in 4 colonne-->
-            <div class="row row-info">
+            <section class="row row-info">
+              <!--Prima colonna-->
               <div class="col col-tra">
                 <p><strong>Increase your traffic</strong>
                   <br><br>
+                  <!--Inserisco le 4 nav verticali del footer-->
+                  <!--Prima Nav-->
                   <nav>
                     <ul>
                       <li><a href="#">Ad software</a></li>
@@ -294,9 +306,11 @@
                     </ul>
                   </nav>
                 </div>
+                <!--Seconda colonna-->
                 <div class="col col-con">
                   <p><strong>Connect With Leads</strong>
                     <br><br>
+                    <!--Seconda nav-->
                     <nav>
                       <ul>
                         <li><a href="#">Find New prospects</a></li>
@@ -307,9 +321,11 @@
                       </ul>
                     </nav>
                   </div>
+                  <!--Terza colonna-->
                   <div class="col col-manage">
                     <p><strong>Close and Manage Leads</strong>
                       <br><br>
+                      <!--Terza nav-->
                       <nav>
                         <ul>
                           <li><a href="#">Document Tracking Tool</a></li>
@@ -320,9 +336,11 @@
                         </ul>
                       </nav>
                     </div>
+                    <!--Quarta colonna-->
                     <div class="col col-sup">
                       <p><strong>Support and Tools</strong>
                         <br><br>
+                        <!--Quarta nav-->
                         <nav>
                           <ul>
                             <li><a href="#">Hubspot Partners</a></li>
@@ -339,9 +357,9 @@
                         <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                       </div>
-                      <!--inserisco una row per la selezione lingua-->
-                    </div>
-                    <div class="row row-end">
+                    </section>
+                    <!--inserisco una row con una lista per la selezione lingua-->
+                    <section class="row row-end">
                       <ul>
                         <li><a href="#">English</li></a>
                         <li><a href="#">Deutsch</li></a>
@@ -352,7 +370,7 @@
                       </ul>
                       <hr>
                       <!--inserisco una row la sezione copyright e privacy suddivisa in due colonne-->
-                      <div class="row row-copy">
+                      <section class="row row-copy">
                         <div class="col col-copy">
                           <img src="img/hubs.svg" alt="hubs">
                           <p>Copyright &copy; Hubspot, Inc.</p>
@@ -361,10 +379,10 @@
                           <p><a href="#">Privacy Policy</a></p>
                           <p><a href="#">Legal Stuff</a></p>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      </section>
+                    </section>
+                  </section>
+                </section>
               </div>
             </body>
             </html>

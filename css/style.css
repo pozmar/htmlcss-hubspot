@@ -7,6 +7,7 @@
 h1, h2, h3, p, li{
   font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+/*lineheight a tutte le p della pagina*/
 p{
   line-height: 30px;
 }
@@ -21,6 +22,7 @@ p{
   float: left;
   position: relative;
 }
+/*HEADER*/
 /*PRIMA SEZIONE*/
 /* do caratteristiche alla row sopra*/
 .row-top{
@@ -112,7 +114,6 @@ p{
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 5px;
-  font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #search{
   border: none;
@@ -133,7 +134,6 @@ p{
   width: 30%;
   height: 100px;
 }
-
 /*do proprietà al box perchè stia al centro del suo contenitore*/
 .box-logo{
   height: 50px;
@@ -174,12 +174,9 @@ p{
   left: 25%;
   transform: translate(-0%, -50%);
 }
-
-.drop-nav > select{
+.drop-nav select{
   border:none;
-  font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
 /*do proprietà solo al button della nav senza dropdown*/
 #pricebtn{
   border: none;
@@ -193,13 +190,13 @@ p{
   width: 100%;
   position: relative;
 }
+/*Do proprietà al div con la bg img*/
 .background{
   height: 600px;
   width: 100%;
   background-image: url("../img/jumbotron.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%, 50% ;
 }
 /*do proprietà alla box sovrapposta all'img*/
 .box-nextimg{
@@ -218,6 +215,7 @@ p{
 .box-nextimg h1, .box-nextimg p{
   text-align: left;
 }
+/*do proprietà all'ultimo p del box*/
 .box-nextimg p:last-child{
   padding-right: 150px;
   font-size: 13px;
@@ -235,6 +233,7 @@ p{
   background-color: #4cedda;
   border: 3px solid black;
 }
+/*MAIN*/
 /*QUINTA SEZIONE*/
 /*do proprietà al contenitore della aprte centrale della pagina*/
 .central{
@@ -335,6 +334,7 @@ p{
 .box-free h3{
   display: inline-block;
 }
+/*do proprietà all'hr*/
 .box-free hr{
   width: 60%;
   border: 1px solid grey;
@@ -347,6 +347,7 @@ p{
 .col-feat p{
   display: inline;
 }
+/*do proprietà al box con la lista e agli elementi della lista*/
 .popf{
   margin-top: 20px;
 }
@@ -381,7 +382,6 @@ p{
   .testo{
     width: 100%;
     height: 35%;
-
   }
   /*do proprietà alla box inferiore con il bottone delle tre col*/
   .centerbtn{
@@ -395,13 +395,13 @@ p{
     padding-left: 10px;
     text-align: center;
   }
-
   /*do proprietà al bottone nelle col*/
   .centerbtn .redbtn{
     padding: 20px;
     border-radius: 5px;
     margin-top: 30px;
   }
+  /*do proprietà all'img*/
   .centerimg img{
     width: 25%;
   }
@@ -419,13 +419,16 @@ p{
     margin-left: 50px;
     margin-right: auto;
   }
+  /*do proprietà all'hr*/
   .centerimg hr{
     border: 1px solid grey;
     background-color: grey;
   }
+  /*do proprietà alla terza colonna*/
   .col-service{
     float: right;
   }
+  /*do proprietà a tutti gli elementi dentro ai box*/
   *.centerimg{
     padding-left: 20px;
     padding-right: 20px;
@@ -434,6 +437,7 @@ p{
     padding-left: 20px;
     padding-right: 20px;
   }
+  /*do proprietà agli elementi della lista*/
   .centerbtn .fa-check-circle:before{
     color: #ff7a59;
   }
@@ -620,18 +624,18 @@ p{
     padding-right: 150px;
     padding-top: 30px;
   }
+  /*do proprietà alla prima riga*/
   .row-info{
     width: 100%;
     height: 400px;
   }
+  /*do proprietà alla lista e ai suoi elementi*/
   .row-info ul{
     list-style: none;
   }
   .row-info a, .row-end a{
     color: white;
     text-decoration: none;
-    font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
-
   }
   /*do proprietà comuni alle 4 col*/
   .col-tra, .col-con, .col-manage, .col-sup{
